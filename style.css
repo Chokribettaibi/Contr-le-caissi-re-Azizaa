@@ -1,0 +1,95 @@
+body {
+    background: #eee;
+}
+.container {
+    /* text-align: center; */
+}
+h1 {
+    /*text-align: center;
+    */
+    width: 400px;
+    box-shadow: 2px 3px 0 #1f2327;
+    background-color: rgb(181, 181, 235);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+h3 {
+    width: 200px;
+    box-shadow: 2px 3px 0 rebeccapurple;
+    border-radius: 5px;
+    /*text-align: center;
+    */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+table {
+    /* position: relative; */
+    /* left: 60px; */
+    background-image: linear-gradient(600deg, rgb(77, 187, 145), #d1baba 60%);
+    /* border: 2px solid; */
+    border-color: #007bff;
+    box-shadow: 1px 1px #1f2327;
+}
+table td {
+    /* border: 2px solid gray; */
+    width: 140px;
+    text-align: center;
+}
+table td:hover {
+    background-color: rgb(255, 255, 255);
+    /* color: red; */
+}
+input {
+    width: 50px;
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(139, 0, 42);
+}
+input:focus {
+    transform: scale(1.2);
+    border-color: #287eda;
+    box-shadow: 0 0 0 0.3rem rgba(0, 123, 255, 0.25);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+#écar {
+    border: 2px solid red;
+}
+.autbut {
+    display: flex;
+    background-color: rgb(241, 213, 213);
+    /* border: 2px solid; */
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+button{
+    cursor: pointer;
+    position: relative;
+    left: 100px;
+    background-image: linear-gradient(90deg, rgb(187, 77, 77), #d1baba 60%);
+    background-color: rgb(221, 58, 47);
+    color: #1d1212;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+button:hover {
+    background-image: linear-gradient(0deg, rgb(231, 13, 13), #56b331 60%);
+}
+/* .btn {
+    position: relative;
+    left: 300px;
+    top: -800px;
+} */
