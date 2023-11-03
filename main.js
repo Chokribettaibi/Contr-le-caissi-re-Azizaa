@@ -19,6 +19,7 @@ let TR10 = document.getElementById("TR10")
 let TR50 = document.getElementById("TR50")
 let TR100 = document.getElementById("TR100")
 
+let reselt = document.getElementById("reselt")
 
 let reslt50 = document.getElementById("reslt50");
 let reslt20 = document.getElementById("reslt20");
@@ -45,6 +46,7 @@ let total = document.getElementById("total");
 let cais = document.getElementById("cais");
 let écare = document.getElementById("écar");
 
+
 let btn = document.getElementById("btn");
 
 
@@ -52,6 +54,19 @@ let btn = document.getElementById("btn");
 // console.log(JSON.stringify(sp50.value))
 
 btn.onclick = function () {
+    // écare.style.color = "red";
+    // écare.style.fontWeight = "bold";
+    // écare.style.cssText = "font-weight: bold; color: green; opacity: 0.9";
+    // écare.style.removeProperty("color");
+    // écare.style.setProperty("font-size", "40px", "important");
+
+    // console.log(document.styleSheets);
+    // console.log(document.styleSheets[0].rules[0].style.removeProperty("line-height"));
+    // console.log(document.styleSheets[0].rules[0].style.setProperty("background-color", "red"));
+
+    // écare.style.setProperty("display", "block")
+
+
     reslt50.value = inp50.value * 50;
     reslt20.value = inp20.value * 20;
     reslt10.value = inp10.value * 10;
@@ -82,4 +97,65 @@ btn.onclick = function () {
     +resltTR6.value + +resltTR7.value ;
     écare.value = +total.value - +cais.value - 200;
     // sp50.value = sp50.value;
+
+    if (écare.value <= 0){
+        reselt.style.background = "red";
+    } else {
+        reselt.style.background = "green";
+        reselt.style.color = "#eee";
+    }
 }
+
+let btn2 = document.getElementById("btnD");
+
+// clear inputs
+
+btn2.onclick = function (){
+    reslt50.value = '';
+    reslt20.value = '';
+    reslt10.value = '';
+    reslt5.value = '';
+    resltp5.value = '';
+    reslt2.value = '';
+    reslt1.value = '';
+    reslt05.value = '';
+    reslt200.value = '';
+    reslt100.value = '';
+    reslt50m.value = '';
+
+    total.value ='';
+    écare.value = '';
+    cais.value = '';
+
+    resltTR4.value = '';
+    resltTR5.value = '';
+    resltTR6.value = '';
+    resltTR7.value = '';
+    resltTR8.value = '';
+    resltTR9.value = '';
+    resltTR10.value = '';
+    resltTR50.value = '';
+    resltTR100.value = '';
+    
+    inp50.value = '';
+    inp20.value = '';
+    inp10.value = '';
+    inp5.value = '';
+    inpp5.value = '';
+    inp2.value = '';
+    inp1.value = '';
+    inp05.value = '';
+    inp200.value = '';
+    inp100.value = '';
+    inp50m.value = '';
+    TR4.value = '';
+    TR5.value = '';
+    TR6.value = '';
+    TR7.value = '';
+    TR8.value = '';
+    TR9.value = '';
+    TR10.value = '';
+    TR50.value = '';
+    TR100.value = '';
+  };
+
